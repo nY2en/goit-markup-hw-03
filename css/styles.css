@@ -1,0 +1,231 @@
+/* Цвета */
+:root {
+    --background-primary-color: #FFFFFF;
+    --background-secondary-color: #2F303A;
+    --background-team-color: #F5F4FA;
+    --text-primary-color: #757575;
+    --text-secondary-color: #212121;
+    --accent: #2196F3;
+    --black: #000000;
+    --white: #FFFFFF;
+    --background-buttons-color: #F5F4FA;
+    --contact-links-f: rgba(255, 255, 255, 0.6);
+}   
+
+body {
+    background-color: var(--background-primary-color);
+    color: var(--text-primary-color);
+
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.list {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* Шапка */
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+/* колір верхнього лого */
+.logo.primary {
+    color: var(--black);
+}
+/* колір половини лого */
+.logoblue {
+    color: var(--accent);
+}
+/* навігація сайту та мейл/тел */
+.site-nav .links, 
+.connect-with-us .links {
+    color:inherit;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em; 
+}
+/* текуща сторінка */
+.site-nav .links.current {
+    color: var(--accent);
+}
+/* колір мейл/тел */
+.links.color {
+    color: var(--text-secondary-color);
+}
+/* ефекти навігації */
+.site-nav .links:hover,
+.site-nav .links:focus {
+    color: var(--accent);
+}
+/* ефекти мейл/тел */
+.connect-with-us .links:hover,
+.connect-with-us .links:focus {
+    color: var(--accent);
+}
+
+
+
+/* МЕЙН index.html */
+
+/* Герой */
+.hero   {
+    background-color: var(--background-secondary-color);
+}
+.hero-title {
+    color: var(--white);
+   
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+/* Кнопка Замовити послуги */
+.button {
+    background-color: var(--accent);
+    color: var(--white);
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+/* ховер кнопки */
+.button:hover,
+.button:focus {
+    color:var(--background-secondary-color);
+}
+/* Заголовок усіх секцій, окрім героя*/
+.section-title {
+    color: var(--text-secondary-color);
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    
+}
+
+/* Головні якості */
+/* скритий заголовок */
+.section-title.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/* Заголовки якостей */
+.qualitie-title {
+    color: var(--text-secondary-color);
+   
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+/* Наша команда */
+.team {
+    background-color: var(--background-team-color);
+}
+
+.team .name {
+    color: var(--text-secondary-color);
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team .role {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+
+
+/* МЕЙН portfolio.html */
+
+/* кнопки фільтру */
+.radio-button {
+    color: var(--text-secondary-color);
+    background-color: var(--background-buttons-color);
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    cursor: pointer;
+}
+
+.radio-button:hover,
+.radio-button:focus {
+    background-color: var(--accent);
+    color: var(--white);
+    box-shadow: 0px 4px 10px var(--text-primary-color);
+}
+/* Проекти */
+.project-title {
+    color: var(--text-secondary-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.project-description {
+    color: var(--text-primary-color);
+
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+
+/* Підвал */
+footer {
+    background-color: var(--background-secondary-color);
+}
+/* колір нижнього лого */
+.logo.secondary {
+    color: var(--white);
+}
+/* колір адреси */
+.address.color {
+    color: var(--white);
+}
+/* стилі адреси та мейл/тел */
+.address,
+.contact-with-us .links {
+    color: var(--contact-links-f);
+    font-style: normal;
+
+}
+.contact-with-us .links:hover,
+.contact-with-us .links:focus {
+    color: var(--accent);
+}
