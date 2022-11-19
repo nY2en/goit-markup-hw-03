@@ -19,7 +19,6 @@
     --button-portfolio-shadow-alpha-zero-one: rgba(0, 0, 0, 0.1);
     --button-portfolio-shadow-alpha-apha-zerozero-eight: rgba(0, 0, 0, 0.08);
     --button-portfolio-shadow-alpha-zero-twelve: rgba(0, 0, 0, 0.12);
-
 }   
 
 body {
@@ -95,7 +94,6 @@ p {
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
-
 }
 /* текуща сторінка */
 .site-nav .links.current {
@@ -109,8 +107,6 @@ p {
 .site-nav .links:hover,
 .site-nav .links:focus {
     color: var(--accent);
-
-   
 }
 /* ефекти мейл/тел */
 .connect-with-us .links:hover,
@@ -130,7 +126,6 @@ header {
 .connect-with-us { 
     display: flex;  
     align-items: center;
-
 }
 
 .site-nav > .item:not(:last-child),
@@ -270,13 +265,13 @@ header {
     padding-left: 200px;
     padding-right: 200px;
 }
+
 .activity-flex {
     padding-top: 0px;
 }
 
 .activity {
-    display: flex;
-    
+    display: flex;   
 }
 
 .activity > .item:not(:last-child) {
@@ -316,7 +311,6 @@ header {
 
 .team-flex { 
     display: flex;
-    
 }
 
 .team-flex > .item:not(:last-child) {
@@ -333,7 +327,6 @@ header {
 
 
     padding-bottom: 30px;
-    
 }
 
 
@@ -363,7 +356,6 @@ header {
     padding-right: 22px;
     padding-bottom: 6px;
     padding-left: 22px;
-
 }
 
 .radio-button:hover,
@@ -404,10 +396,8 @@ header {
 }
 
 .projects {
-    
     display: flex;
     flex-wrap: wrap;
-   
 }
 
 .projects > .item > a > img {
