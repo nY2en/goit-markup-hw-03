@@ -357,6 +357,11 @@ p {
     line-height: 1.88;
 }
 
+.projects-list-flex {
+    display: flex;
+    justify-content: center;
+}
+
 
 /* Підвал */
 footer {
