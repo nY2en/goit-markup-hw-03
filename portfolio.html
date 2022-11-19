@@ -4,28 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+
+     <link rel="stylesheet" href="./css/styles.css">
     <title>Portfolio</title>
 </head>
 <body>
     <!-- шапка -->
     <header>
-        <nav>
-            <a href="./index.html" class="logo primary"><span class="logoblue">Web</span>Studio</a>
-            <ul class="site-nav list">
-                <li><a href="./index.html" class="links color">Студія</a></li>
-                <li><a href="" class="links color current">Портфоліо</a></li>
-                <li><a href="" class="links color">Контакти</a></li>
-            </ul>
-        </nav>
-        <ul class="connect-with-us list">
-            <li><a href="mailto:info@devstudio.com" class="links">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="links">+38 096 111 11 11</a></li>
-        </ul>
+         <div class="container header-flex">
+             <nav class="nav">
+                 <a href="./index.html" class="logo primary"><span class="logoblue">Web</span>Studio</a>
+                 <ul class="site-nav list">
+                     <li class="item"><a href="./index.html" class="links color">Студія</a></li>
+                     <li class="item"><a href="" class="links color current">Портфоліо</a></li>
+                     <li class="item"><a href="" class="links color">Контакти</a></li>
+                 </ul>
+             </nav>
+             <ul class="connect-with-us list">
+                 <li class="item"><a href="mailto:info@devstudio.com" class="links">info@devstudio.com</a></li>
+                 <li class="item"><a href="tel:+380961111111" class="links">+38 096 111 11 11</a></li>
+             </ul>
+         </div>
     </header>
     <!-- мейн -->
     <main>
@@ -108,15 +115,18 @@
     </main>
     <!-- підвал -->
     <footer>
-        <a href="./index.html" class="logo secondary"><span class="logoblue">Web</span>Studio</a>
-        <address>
-            <p class="address color">м. Київ, пр-т Лесі Українки, 26</p>
-            <ul class="contact-with-us list">
-                <li><a href="mailto:info@devstudio.com" class="links">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="links">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
+        <div class="container footer-flex">
+            <a href="./index.html" class="logo secondary"><span class="logoblue">Web</span>Studio</a>
+            <address>
+                <div class="address-flex">
+                    <p class="address color">м. Київ, пр-т Лесі Українки, 26</p>
+                    <ul class="contact-with-us list">
+                        <li class="item"><a href="mailto:info@devstudio.com" class="links">info@devstudio.com</a></li>
+                        <li class="item"><a href="tel:+380961111111" class="links">+38 096 111 11 11</a></li>
+                    </ul>
+                </div>
+            </address>
+        </div>
     </footer>
-
 </body>
 </html>

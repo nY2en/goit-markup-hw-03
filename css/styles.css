@@ -10,9 +10,16 @@
     --white: #FFFFFF;
     --background-buttons-color: #F5F4FA;
     --contact-links-f: rgba(255, 255, 255, 0.6);
+    --button-portfolio-color: rgba(0, 0, 0, 0.15);
+    --header-border-color : #ECECEC;
+    --team-border-color-alpha-zero-twelve: rgba(0, 0, 0, 0.12);
+    --team-border-color-alpha-zero-fourteen: rgba(0, 0, 0, 0.14);
+    --team-border-color-alpha-zero-two: rgba(0, 0, 0, 0.2);
+
 }   
 
 body {
+
     background-color: var(--background-primary-color);
     color: var(--text-primary-color);
 
@@ -22,15 +29,36 @@ body {
     letter-spacing: 0.03em;
 }
 
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    
+    /* outline: 2px solid tomato; */
+}
+
+/* Утилиты */
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
 
+p {
+    margin: 0;
+}
 
 /* Шапка */
 .logo {
@@ -38,6 +66,11 @@ a {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    
+    margin-right: 93px;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 /* колір верхнього лого */
 .logo.primary {
@@ -47,6 +80,8 @@ a {
 .logoblue {
     color: var(--accent);
 }
+
+
 /* навігація сайту та мейл/тел */
 .site-nav .links, 
 .connect-with-us .links {
@@ -55,6 +90,11 @@ a {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em; 
+    
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
 }
 /* текуща сторінка */
 .site-nav .links.current {
@@ -68,6 +108,8 @@ a {
 .site-nav .links:hover,
 .site-nav .links:focus {
     color: var(--accent);
+
+   
 }
 /* ефекти мейл/тел */
 .connect-with-us .links:hover,
@@ -75,14 +117,36 @@ a {
     color: var(--accent);
 }
 
+.header-flex {
+    border-bottom: 1px solid var(--header-border-color);
+}
 
+.header-flex,
+.nav,
+.site-nav,
+.connect-with-us { 
+    display: flex;  
+    align-items: center;
+
+}
+
+.site-nav > .item:not(:last-child),
+.connect-with-us > .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.connect-with-us {
+    margin-left: auto;
+}
 
 /* МЕЙН index.html */
 
 /* Герой */
 .hero   {
     background-color: var(--background-secondary-color);
+    text-align: center;
 }
+
 .hero-title {
     color: var(--white);
    
@@ -92,6 +156,15 @@ a {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    margin-bottom: 30px;
+}
+/* Позиціювання героя */
+.hero-flex {
+    padding-top: 200px;
+    padding-right: 251px;
+    padding-bottom: 280px;
+    padding-left: 251px;
 }
 /* Кнопка Замовити послуги */
 .button {
@@ -104,6 +177,16 @@ a {
     line-height: 1.88;
     letter-spacing: 0.06em;
     cursor: pointer;
+    text-align: center;
+
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px var(--button-portfolio-color);
+    
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+
 }
 /* ховер кнопки */
 .button:hover,
@@ -118,7 +201,14 @@ a {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+
+    margin-bottom: 50px;
     
+}
+/* Падінги для усіх секцій */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;;
 }
 
 /* Головні якості */
@@ -144,25 +234,87 @@ a {
     line-height: 1.14;
     text-transform: uppercase;
 }
+/* Позиціювання якостей */
+.qualities-flex { 
+    display: flex;
+}
+
+.qualities {
+    display: flex;
+}
+
+.qualities > .item {
+    width : calc((100% - 90px)/4);
+}
+
+.qualities > .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* Що робимо */
+/* Позиціюфання */
+
+.activity-flex {
+    padding-top: 0px;
+}
+
+.activity {
+    display: flex;
+    
+}
+
+.activity > .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.item > img {
+    display: block;
+}   
 
 /* Наша команда */
 .team {
     background-color: var(--background-team-color);
 }
 
-.team .name {
+.name {
     color: var(--text-secondary-color);
     
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+
+    margin-top: 30px;
 }
 
-.team .role {
+.role {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+
+    margin-top: 10px;
+}
+
+.team-flex { 
+    display: flex;
+    
+}
+
+.team-flex > .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-flex > .item {
+    background-color: var(--background-primary-color);
+
+    box-shadow: 0px 1px 3px var(--team-border-color-alpha-zero-twelve),
+                0px 1px 1px var(--team-border-color-alpha-zero-fourteen),
+                0px 2px 1px var(--team-border-color-alpha-zero-two);
+    border-radius: 0px 0px 4px 4px;
+
+
+    padding-bottom: 30px;
+    
 }
 
 
@@ -228,4 +380,17 @@ footer {
 .contact-with-us .links:hover,
 .contact-with-us .links:focus {
     color: var(--accent);
+}
+
+.footer-flex {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.address-flex {
+    margin-top: 20px;
+}
+
+.contact-with-us > .item {
+    margin-top: 9px;
 }
