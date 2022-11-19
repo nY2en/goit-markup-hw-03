@@ -410,10 +410,14 @@ header {
    
 }
 
+.projects > .item > a > img {
+    display: block;
+}
+
 .projects > .item {
     margin-right: 30px;
     margin-bottom: 30px;
-    /* border: 1px solid var(--background-border-color-portfolio-works);  */
+    
     width: 370px;
 }
 .projects > .item:nth-child(3n) {
@@ -424,6 +428,14 @@ header {
     margin-bottom: 0px;
 }
 
+.project-content {
+    padding: 20px 24px;
+    border: 1px solid var(--background-border-color-portfolio-works); 
+}
+
+.project-content > h2 {
+    margin-bottom: 4px;
+}
 /* Підвал */
 footer {
     background-color: var(--background-secondary-color);
