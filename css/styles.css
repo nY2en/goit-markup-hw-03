@@ -23,7 +23,6 @@
 }   
 
 body {
-
     background-color: var(--background-primary-color);
     color: var(--text-primary-color);
 
@@ -31,6 +30,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    width: 1600px;
 }
 
 .container {
@@ -40,9 +40,6 @@ body {
    
     padding-left: 15px;
     padding-right: 15px;
-    
-    
-    /* outline: 2px solid tomato; */
 }
 
 /* Утилиты */
@@ -121,8 +118,10 @@ p {
     color: var(--accent);
 }
 
-.header-flex {
+header {
     border-bottom: 1px solid var(--header-border-color);
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .header-flex,
@@ -149,6 +148,8 @@ p {
 .hero   {
     background-color: var(--background-secondary-color);
     text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .hero-title {
@@ -166,9 +167,9 @@ p {
 /* Позиціювання героя */
 .hero-flex {
     padding-top: 200px;
-    padding-right: 251px;
+    padding-right: 252px;
     padding-bottom: 280px;
-    padding-left: 251px;
+    padding-left: 252px;
 }
 /* Кнопка Замовити послуги */
 .button {
@@ -183,7 +184,7 @@ p {
     cursor: pointer;
     text-align: center;
 
-    border-color: transparent;
+    border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px var(--button-portfolio-color);
     
@@ -238,8 +239,15 @@ p {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
+
+    margin-bottom: 10px;
 }
 /* Позиціювання якостей */
+.qualities-section {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
 .qualities-flex { 
     display: flex;
 }
@@ -258,7 +266,10 @@ p {
 
 /* Що робимо */
 /* Позиціюфання */
-
+.what-do-we-do{
+    padding-left: 200px;
+    padding-right: 200px;
+}
 .activity-flex {
     padding-top: 0px;
 }
@@ -279,6 +290,9 @@ p {
 /* Наша команда */
 .team {
     background-color: var(--background-team-color);
+
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .name {
@@ -325,6 +339,10 @@ p {
 
 
 /* МЕЙН portfolio.html */
+.portfolio-section{
+    padding-left: 200px;
+    padding-right: 200px;
+}
 
 /* кнопки фільтру */
 .radio-button {
@@ -395,7 +413,7 @@ p {
 .projects > .item {
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px solid var(--background-border-color-portfolio-works);
+    /* border: 1px solid var(--background-border-color-portfolio-works);  */
     width: 370px;
 }
 .projects > .item:nth-child(3n) {
@@ -406,17 +424,11 @@ p {
     margin-bottom: 0px;
 }
 
-.projects > .item > a > h2 {
-    margin: 20px 24px 4px;
-}
-
-.projects > .item > a > p {
-    margin: 0px 24px 20px;
-}
-
 /* Підвал */
 footer {
     background-color: var(--background-secondary-color);
+    padding-left: 200px;
+    padding-right: 200px;
 }
 /* колір нижнього лого */
 .logo.secondary {
@@ -443,10 +455,19 @@ footer {
     padding-bottom: 60px;
 }
 
+.footer-flex > a {
+    margin-right: 0px;
+    padding: 0px;
+}
+
 .address-flex {
     margin-top: 20px;
 }
 
-.contact-with-us > .item {
-    margin-top: 9px;
+.address {
+    margin-bottom: 9px;
+}
+
+.contact-with-us > .item:not(:last-child) {
+    margin-bottom: 9px;
 }
