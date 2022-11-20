@@ -139,11 +139,10 @@ header {
 /* Герой */
 .hero   {
     background-color: var(--background-secondary-color);
-    text-align: center;
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
+    text-align: center;
 }
-
 .hero-title {
     color: var(--white);
    
@@ -156,11 +155,7 @@ header {
 
     margin-bottom: 30px;
 }
-/* Позиціювання героя */
-.hero-flex {
-    padding-right: 252px;
-    padding-left: 252px;
-}
+
 /* Кнопка Замовити послуги */
 .button {
     background-color: var(--accent);
@@ -402,6 +397,7 @@ header {
 .project-content {
     padding: 20px 24px;
     border: 1px solid var(--background-border-color-portfolio-works); 
+    border-top: none;
 }
 
 .project-content > h2 {
@@ -441,7 +437,7 @@ footer {
     padding: 0px;
 }
 
-.address-flex {
+address {
     margin-top: 20px;
 }
 
