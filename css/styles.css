@@ -29,7 +29,6 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    width: 1600px;
 }
 
 .container {
@@ -116,8 +115,8 @@ p {
 
 header {
     border-bottom: 1px solid var(--header-border-color);
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-right: 112.5px;
+    padding-left: 112.5px;
 }
 
 .header-flex,
@@ -143,8 +142,9 @@ header {
 .hero   {
     background-color: var(--background-secondary-color);
     text-align: center;
-    padding-left: 200px;
-    padding-right: 200px;
+
+    padding-right: 112.5px;
+    padding-left: 112.5px;
 }
 
 .hero-title {
@@ -162,9 +162,9 @@ header {
 /* Позиціювання героя */
 .hero-flex {
     padding-top: 200px;
-    padding-right: 252px;
+    padding-right: 250px;
     padding-bottom: 280px;
-    padding-left: 252px;
+    padding-left: 250px;
 }
 /* Кнопка Замовити послуги */
 .button {
@@ -204,7 +204,6 @@ header {
     text-align: center;
 
     margin-bottom: 50px;
-    
 }
 /* Падінги для усіх секцій */
 .section {
@@ -238,9 +237,10 @@ header {
     margin-bottom: 10px;
 }
 /* Позиціювання якостей */
+
 .qualities-section {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-right: 112.5px;
+    padding-left: 112.5px;
 }
 
 .qualities-flex { 
@@ -261,9 +261,10 @@ header {
 
 /* Що робимо */
 /* Позиціюфання */
+
 .what-do-we-do{
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-right: 112.5px;
+    padding-left: 112.5px;
 }
 
 .activity-flex {
@@ -285,9 +286,8 @@ header {
 /* Наша команда */
 .team {
     background-color: var(--background-team-color);
-
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-right: 112.5px;
+    padding-left: 112.5px;
 }
 
 .name {
@@ -332,9 +332,10 @@ header {
 
 
 /* МЕЙН portfolio.html */
-.portfolio-section{
-    padding-left: 200px;
-    padding-right: 200px;
+
+.portfolio-section {
+    padding-right: 112.5px;
+    padding-left: 112.5px;
 }
 
 /* кнопки фільтру */
@@ -429,8 +430,8 @@ header {
 /* Підвал */
 footer {
     background-color: var(--background-secondary-color);
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-right: 112.5px;
+    padding-left: 112.5px;
 }
 /* колір нижнього лого */
 .logo.secondary {
