@@ -231,8 +231,8 @@ header {
 
     margin-bottom: 10px;
 }
-/* Позиціювання якостей */
 
+/* Позиціювання якостей */
 .qualities-flex { 
     display: flex;
 }
@@ -431,7 +431,8 @@ footer {
     color: var(--accent);
 }
 
-.footer-flex {
+
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
