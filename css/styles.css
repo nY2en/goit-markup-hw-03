@@ -156,6 +156,10 @@ header {
     margin-bottom: 30px;
 }
 
+.hero-flex {
+    width: 696px;
+}
+
 /* Кнопка Замовити послуги */
 .button {
     background-color: var(--accent);
