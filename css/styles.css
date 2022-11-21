@@ -363,13 +363,13 @@ header {
     line-height: 1.88;
 }
 
-.projects-list-flex {
+.buttons {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
 
-.projects-list-flex > .item:not(:last-child) { 
+.buttons > .item:not(:last-child) { 
     margin-right: 8px;
 }
 
